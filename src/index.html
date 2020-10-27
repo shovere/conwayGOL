@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      .center
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+      }
+      .centerGrid
+      {
+        display: flex;
+        justify-content: center;
+        aligh-items: center;
+      }
+    .button
+    {
+       border: solid;
+       color: black;
+       padding: 15px 32px;
+       text-align:center;
+       display: inline-block;
+       font-size: 16px;
+       margin:4px 2px;
+       cursor: pointer;
+    }
+    .button1 {background-color: LightGrey;}
+    </style>
+    <meta charset = "UTF-8">
+    <title>Game Of Life</title>
+    <meta http-equiv = "Content-Security-Policy" content = "script-src 'self' 'unsafe-inline';"/>
+</head>
+  <div class="center">
+    <button id="start" onclick="start(this.id)" class="button button1">Start</button>
+  </div>
+  <div class="centerGrid">
+    <canvas id = "lifeStart" width = "660" height = "660"></canvas>
+  </div>
+<script src ="driver.js"></script>
+</html>
